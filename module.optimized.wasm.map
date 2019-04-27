@@ -1,0 +1,1 @@
+{"version":3,"sources":["assembly/module.ts"],"names":[],"mappings":"4EACe,AAAJ,EAAI","sourceRoot":"assemblyscript:///","sourceContents":["export function add(a: number, b: number) :number {\r\n    return a + b;\r\n}\r\n\r\n\r\n"]}

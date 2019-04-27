@@ -1,0 +1,18 @@
+{
+  "name": "assemblyscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:untouched && npm run build:optimized",
+    "build:untouched": "asc assembly/module.ts -t module.untouched.wat -b module.untouched.wasm --validate --sourceMap --measure",
+    "build:optimized": "asc assembly/module.ts -t module.optimized.wat -b module.optimized.wasm --validate --sourceMap --measure --optimize"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript"
+  }
+}
